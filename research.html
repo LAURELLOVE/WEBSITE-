@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Research, Education & Training | Cameroon Oncology Center</title>
+<meta name="description" content="Research, education and professional training at Cameroon Oncology Center, including COC School of Health Sciences, AUIST, residency support and international academic partnerships.">
+<style>
+:root{--blue:#0b3b78;--blue2:#0f5da8;--red:#d9232e;--gold:#e2b23e;--ink:#17324d;--muted:#60758a;--pale:#f4f8fc;--line:#d9e4ef;--white:#fff;--green:#2e8b57}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:white;line-height:1.55}.wrap{max-width:1180px;margin:auto;padding:0 24px}
+.top{background:#072b57;color:#fff;font-size:14px}.top .wrap{display:flex;justify-content:space-between;gap:20px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.head{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}.brand img{height:64px;width:auto;display:block}.actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-block;padding:11px 17px;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid var(--blue)}.btn.blue{background:var(--blue);color:#fff}.btn.red{background:var(--red);border-color:var(--red);color:#fff}.btn.light{background:#fff;color:var(--blue)}
+nav{background:var(--blue)}nav .wrap{display:flex;gap:6px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;padding:12px 11px;font-size:14px}nav a:hover,nav a.active{background:#0d4b95}
+.hero{position:relative;min-height:480px;display:grid;align-items:end;overflow:hidden}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,33,67,.94),rgba(5,33,67,.58),rgba(5,33,67,.15))}.hero .content{position:relative;z-index:1;color:#fff;padding:70px 24px 64px;max-width:1180px;width:100%;margin:auto}.eyebrow{font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#ffd66d;font-size:13px}.hero h1{font-size:54px;line-height:1.02;margin:10px 0 14px;max-width:900px}.hero p{font-size:20px;max-width:840px;margin:0 0 24px}.chips{display:flex;gap:10px;flex-wrap:wrap}.chip{background:rgba(255,255,255,.95);color:var(--blue);padding:9px 12px;border-radius:999px;font-weight:700;font-size:14px}
+section{padding:64px 0}.pale{background:var(--pale)}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}.section-head h2{font-size:38px;line-height:1.12;margin:6px 0 0;color:var(--blue)}.section-head p{max-width:570px;color:var(--muted)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 28px rgba(16,57,96,.07)}.card .icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:#e9f2fb;color:var(--blue);font-weight:900;margin-bottom:14px;font-size:18px}.card h3{margin:0 0 8px;color:var(--blue)}.card p{margin:0;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px;text-align:center;box-shadow:0 8px 28px rgba(16,57,96,.07)}.stat strong{display:block;color:var(--blue);font-size:34px;line-height:1}.stat span{display:block;margin-top:7px;color:var(--muted);font-size:14px}
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:stretch}.panel{background:linear-gradient(135deg,#0b3b78,#0f5da8);color:#fff;border-radius:20px;padding:30px}.panel h2{font-size:34px;margin:0 0 12px}.panel p{color:#e4eef8}.panel a{color:#fff;font-weight:700}.list{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 8px 28px rgba(16,57,96,.07)}.list h3{margin-top:0;color:var(--blue)}.list ul{margin:0;padding-left:20px;color:var(--muted)}.list li{margin:8px 0}
+.people{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.person{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;display:grid;grid-template-columns:220px 1fr;box-shadow:0 8px 28px rgba(16,57,96,.07)}.person img{width:100%;height:100%;min-height:310px;object-fit:cover}.person .body{padding:24px}.person h3{font-size:26px;margin:0;color:var(--blue)}.role{color:#b68112;font-weight:800;margin:5px 0 12px}.person p{color:var(--muted)}
+.residents{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.resident{background:#fff;border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:14px;padding:20px;box-shadow:0 6px 20px rgba(16,57,96,.06)}.resident strong{display:block;color:var(--blue);font-size:18px}.resident span{display:block;color:var(--muted);margin-top:5px;font-size:14px}
+.partner-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.partner{border:1px solid var(--line);background:#fff;border-radius:14px;padding:22px}.partner h3{color:var(--blue);margin:0 0 8px;font-size:18px}.partner p{color:var(--muted);margin:0;font-size:14px}
+.note{background:#fff8e6;border-left:5px solid var(--gold);padding:20px 22px;border-radius:12px;color:#5f5131}.cta{background:#0b3b78;color:#fff;border-radius:20px;padding:34px;display:flex;justify-content:space-between;gap:24px;align-items:center}.cta h2{margin:0 0 8px}.cta p{margin:0;color:#dce8f5}
+.footer{background:#061f40;color:#d8e4f2;padding:44px 0 20px;margin-top:50px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}.footer img{height:70px;background:white;border-radius:8px;padding:6px}.footer h4{color:#fff;margin-top:0}.footer a{color:#d8e4f2;text-decoration:none;display:block;margin:6px 0}.copy{border-top:1px solid rgba(255,255,255,.15);margin-top:25px;padding-top:16px;font-size:13px}
+@media(max-width:980px){.grid4,.stats,.residents,.partner-grid{grid-template-columns:1fr 1fr}.split,.people{grid-template-columns:1fr}.person{grid-template-columns:190px 1fr}.hero h1{font-size:42px}.footer-grid{grid-template-columns:1fr}.section-head{display:block}}
+@media(max-width:620px){.grid4,.stats,.residents,.partner-grid{grid-template-columns:1fr}.person{grid-template-columns:1fr}.person img{height:330px}.hero{min-height:420px}.hero h1{font-size:36px}.head{align-items:flex-start;flex-direction:column}.brand img{height:54px}.cta{align-items:flex-start;flex-direction:column}}
+</style>
+
+<style>
+.partner-groups{display:grid;gap:28px}.partner-group h3{color:#123a78;margin:0 0 14px}.partner-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}.partner-card{background:#fff;border:1px solid #dbe5f2;border-radius:16px;padding:18px;box-shadow:0 8px 24px rgba(22,54,99,.08)}.partner-card h4{margin:0 0 8px;color:#0f3470}.partner-card p{margin:0;color:#4f6075;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><div>Cameroon Oncology Center • Bekoko-Dibombari, Littoral Region</div><div>+237 652 269 648 &nbsp; | &nbsp; +237 689 749 717 &nbsp; | &nbsp; Doctor on Call: +237 682 978 661</div></div></div>
+<header>
+  <div class="wrap head"><a class="brand" href="index.html"><img src="assets/coc-official-logo.png" alt="Cameroon Oncology Center official logo"></a><div class="actions"><a class="btn light" href="contact.html">Contact COC</a><a class="btn red" href="patients.html#appointment">Book an Appointment</a></div></div>
+  <nav><div class="wrap"><a href="index.html">Home</a><a href="about.html">About COC</a><a href="services.html">Services</a><a href="cancers.html">Cancers We Treat</a><a href="patients.html">Patients & Families</a><a class="active" href="research.html">Research & Training</a><a href="leadership.html">Leadership</a><a href="contact.html">Contact</a></div></nav>
+</header>
+
+<div class="hero">
+  <img src="assets/coc-building-real.png" alt="Cameroon Oncology Center main campus">
+  <div class="content">
+    <div class="eyebrow">Research • Education • Professional Training</div>
+    <h1>Building Cancer-Care Capacity in Cameroon and Africa</h1>
+    <p>Clinical care, education and research are connected at COC. Our main campus also hosts the Cameroon Oncology Center School of Health Sciences, part of the African University Institute of Science and Technology.</p>
+    <div class="chips"><span class="chip">25+ Scientific Papers</span><span class="chip">COC School of Health Sciences</span><span class="chip">4 Sponsored Medical Residents</span><span class="chip">International Academic Partnerships</span></div>
+  </div>
+</div>
+
+<section><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow" style="color:#b68112">Academic Mission</div><h2>Care today. Train the workforce for tomorrow.</h2></div><p>COC combines comprehensive cancer care with education, research and professional development so that clinical experience can strengthen the future oncology workforce in Cameroon and the region.</p></div>
+  <div class="grid4">
+    <div class="card"><div class="icon">R</div><h3>Clinical Research</h3><p>COC clinicians, scientists and collaborators study cancer care delivery, outcomes, radiotherapy, imaging, nutrition, tele-oncology and other areas relevant to African oncology practice.</p></div>
+    <div class="card"><div class="icon">E</div><h3>Health Sciences Education</h3><p>The COC School of Health Sciences operates from the main campus as part of the African University Institute of Science and Technology.</p></div>
+    <div class="card"><div class="icon">MD</div><h3>Residency Support</h3><p>COC sponsors medical residents training in oncology and surgical disciplines needed to expand specialist capacity.</p></div>
+    <div class="card"><div class="icon">↔</div><h3>Academic Partnerships</h3><p>Training relationships with universities and teaching hospitals support residency education, clinical rotations and professional exchange.</p></div>
+  </div>
+</div></section>
+
+<section class="pale"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow" style="color:#b68112">At a Glance</div><h2>Research and training embedded in the COC campus</h2></div><p>These figures reflect the institutional academic commitments already established by COC.</p></div>
+  <div class="stats">
+    <div class="stat"><strong>25+</strong><span>papers published by COC faculty, scientists and researchers in the past 10 years</span></div>
+    <div class="stat"><strong>4</strong><span>medical residents currently sponsored by COC</span></div>
+    <div class="stat"><strong>1</strong><span>School of Health Sciences operating from the COC main campus</span></div>
+    <div class="stat"><strong>4</strong><span>major academic / residency partnerships highlighted on this page</span></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="split">
+    <div class="panel"><div class="eyebrow">COC School of Health Sciences</div><h2>Part of the African University Institute of Science and Technology</h2><p>The Cameroon Oncology Center School of Health Sciences operates from the COC main campus and forms part of the African University Institute of Science and Technology (AUIST).</p><p>This creates a direct bridge between academic instruction and a functioning comprehensive oncology environment where learners can observe multidisciplinary cancer care, diagnostic services, radiotherapy, medical oncology, surgery, nursing, pharmacy, imaging and supportive care.</p><p><a href="https://www.auist.org" target="_blank" rel="noopener">Visit AUIST — www.auist.org →</a></p></div>
+    <div class="list"><h3>Learning environment</h3><ul><li>Clinical exposure within a multidisciplinary oncology center.</li><li>Faculty participation from clinicians, scientists and healthcare professionals.</li><li>Integration of education with patient care and research.</li><li>Professional training opportunities across clinical and technical disciplines.</li><li>Opportunities to build long-term cancer-care capacity in Cameroon and the wider region.</li></ul></div>
+  </div>
+</div></section>
+
+<section class="pale"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow" style="color:#b68112">Academic Leadership</div><h2>Real COC and AUIST personnel</h2></div><p>The photographs below are original uploaded photographs. No AI-generated portraits are used.</p></div>
+  <div class="people">
+    <article class="person"><img src="assets/paul-mobit.png" alt="Professor Paul N. Mobit"><div class="body"><h3>Professor Paul N. Mobit</h3><div class="role">Founder & Chief Executive Officer, Cameroon Oncology Center</div><p>Professor Mobit supports the integration of clinical oncology, research, professional education and institutional development at COC.</p></div></article>
+    <article class="person"><img src="assets/boris-fominyam.png" alt="Mr. Boris Fominyam"><div class="body"><h3>Mr. Boris Fominyam</h3><div class="role">Registrar, African University Institute of Science and Technology</div><p>Supports academic administration and the university's educational activities connected with the COC campus.</p></div></article>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow" style="color:#b68112">Medical Residency Sponsorship</div><h2>Supporting the next generation of specialists</h2></div><p>COC currently sponsors four medical residents in specialties that directly strengthen comprehensive cancer care.</p></div>
+  <div class="residents">
+    <div class="resident"><strong>Clinical Oncology</strong><span>Specialist training supporting integrated radiation and systemic cancer care.</span></div>
+    <div class="resident"><strong>Medical Oncology</strong><span>Specialist training in systemic therapy and comprehensive medical management of cancer.</span></div>
+    <div class="resident"><strong>General Surgery</strong><span>Surgical training that strengthens access to cancer surgery and multidisciplinary surgical care.</span></div>
+    <div class="resident"><strong>Gynecology</strong><span>Specialist training relevant to cervical, ovarian, uterine and other women's health conditions.</span></div>
+  </div>
+</div></section>
+
+<section class="pale" id="partners"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow" style="color:#b68112">Academic & Institutional Partnerships</div><h2>Regional and international collaboration</h2></div><p>COC collaborates with universities, teaching hospitals and cancer centers in Cameroon, Africa, Europe, the United States and India. The scope varies by institution and includes training, residency support, clinical collaboration and professional exchange.</p></div>
+  <h3 style="color:var(--blue);margin:28px 0 14px">Cameroon & Africa</h3>
+  <div class="partner-grid">
+    <div class="partner"><h3>University of Yaoundé I</h3><p>Residency collaboration supporting Medical Oncology and Radiation Oncology training.</p></div>
+    <div class="partner"><h3>ICT University — Yaoundé, Cameroon</h3><p>Institutional and academic collaborator.</p></div>
+    <div class="partner"><h3>University of Nigeria, Enugu</h3><p>Clinical Oncology training collaboration.</p></div>
+    <div class="partner"><h3>Lagos University Teaching Hospital</h3><p>Clinical residency collaboration in oncology.</p></div>
+  </div>
+  <h3 style="color:var(--blue);margin:34px 0 14px">Europe</h3>
+  <div class="partner-grid">
+    <div class="partner"><h3>Institut Strauss — Strasbourg, France</h3><p>Institutional collaborator.</p></div>
+    <div class="partner"><h3>Centre Hospitalier de Coutances — France</h3><p>Institutional collaborator.</p></div>
+  </div>
+  <h3 style="color:var(--blue);margin:34px 0 14px">International</h3>
+  <div class="partner-grid">
+    <div class="partner"><h3>University of Kentucky — USA</h3><p>International clinical rotations and professional exchange.</p></div>
+    <div class="partner"><h3>Pinnacle Cancer Centre — India</h3><p>Institutional and clinical collaborator.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="split">
+    <div class="list"><h3>Research themes</h3><ul><li>Radiotherapy implementation, quality assurance and treatment delivery in resource-limited settings.</li><li>Patterns of metastatic cancer and imaging-based oncology research.</li><li>Tele-oncology and international collaboration.</li><li>Oncology nutrition and supportive care.</li><li>Innovative treatment techniques and practical solutions for cancer care in sub-Saharan Africa.</li></ul></div>
+    <div class="panel"><div class="eyebrow">Scientific Contribution</div><h2>More than 25 papers in reputable international journals</h2><p>Over the past decade, COC faculty, scientists and research collaborators have published more than 25 papers. The research program is intended to document real-world oncology practice, evaluate outcomes and contribute African evidence to the international cancer-care literature.</p><p>Selected work has addressed radiotherapy implementation, tele-oncology, metastatic cancer patterns, medical physics quality assurance, nutrition and innovative treatment techniques.</p></div>
+  </div>
+  <div class="note" style="margin-top:22px"><strong>Real-image policy:</strong> identifiable COC personnel and facilities are shown only with verified original photographs supplied by COC. No AI-generated staff or campus imagery is used on this page.</div>
+</div></section>
+
+<section><div class="wrap"><div class="cta"><div><h2>Interested in education, research or professional training at COC?</h2><p>Contact Cameroon Oncology Center or visit the African University Institute of Science and Technology for academic program information.</p></div><div class="actions"><a class="btn red" href="contact.html">Contact COC</a><a class="btn light" href="https://www.auist.org" target="_blank" rel="noopener">Visit AUIST</a></div></div></div></section>
+
+
+<footer class="footer"><div class="wrap"><div class="footer-grid"><div><img src="assets/coc-official-logo.png" alt="Cameroon Oncology Center"><p>Accessible, affordable and high-quality comprehensive cancer care through clinical excellence, research, education and professional training.</p></div><div><h4>Contact</h4><p>+237 652 269 648<br>+237 689 749 717<br>Doctor on Call: +237 682 978 661</p><a href="https://www.camoncenter.org">www.camoncenter.org</a></div><div><h4>Academic Links</h4><a href="https://www.auist.org" target="_blank" rel="noopener">African University Institute of Science and Technology</a><a href="about.html">About COC</a><a href="leadership.html">Leadership</a></div></div><div class="copy">© 2026 Cameroon Oncology Center • Hope • Care • Life</div></div></footer>
+</body>
+</html>
