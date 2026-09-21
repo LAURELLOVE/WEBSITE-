@@ -1,2 +1,15 @@
+node_modules/
+.DS_Store
+Thumbs.db
+dist/
+coc-website-upload.zip
+
+# Local working material (design mockups, source photos, planning files) - not part of the website
 team/
 design-reference/
+
+# Live data and private settings - never commit these
+website/data/*
+!website/data/.htaccess
+!website/data/index.html
+website/api/config.local.php

@@ -1,0 +1,47 @@
+# Cameroon Oncology Center - Apache settings for Network Solutions shared hosting.
+# (Ignored harmlessly if your plan runs on IIS/Windows instead of Apache.)
+
+AddDefaultCharset UTF-8
+ErrorDocument 404 /404.html
+
+<IfModule mod_mime.c>
+  AddType application/pdf .pdf
+  AddType image/svg+xml .svg
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml text/plain application/xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType text/css "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType application/pdf "access plus 1 month"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# --- Force HTTPS ---
+# Once an SSL certificate is active on your domain, remove the leading "#"
+# from the 5 lines below. Do NOT enable it before https://yourdomain works.
+#<IfModule mod_rewrite.c>
+#  RewriteEngine On
+#  RewriteCond %{HTTPS} !=on
+#  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#</IfModule>
+
+# --- Network Solutions: if an old index.php / home.html in this folder hides the new site ---
+# Preferred fix: rename or move those old files. Only if that is not possible, remove the "#"
+# below so index.html is served first. (On a few hosting plans this line can cause a
+# 500 error - if that happens, put the "#" back.)
+#DirectoryIndex index.html index.php

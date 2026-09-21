@@ -1,0 +1,27 @@
+/* Shared styling for the COC website forms. Self-contained so it works on every page. */
+.coc-formwrap{width:min(1180px,calc(100% - 36px));margin:0 auto;padding:10px 0 56px}
+.coc-form{max-width:860px;margin:0 auto;background:#fff;border:1px solid #dbe7f2;border-radius:16px;padding:28px;box-shadow:0 12px 32px rgba(4,52,107,.12);font-family:Arial,Helvetica,sans-serif;color:#19324d}
+.coc-form h2{margin:0 0 6px;font-size:28px;line-height:1.15;color:#073b83}
+.coc-form .intro{margin:0 0 18px;color:#62758a}
+.coc-form .urgent{background:#fff4f4;border-left:4px solid #d71920;border-radius:8px;padding:10px 14px;margin:0 0 18px;font-size:14px;color:#5a1a1d}
+.coc-form .urgent a{color:#b3121a;font-weight:700}
+.coc-form .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px}
+.coc-form .full{grid-column:1/-1}
+.coc-form label{display:block;font-weight:700;font-size:14px}
+.coc-form label small{font-weight:400;color:#62758a}
+.coc-form input[type=text],.coc-form input[type=email],.coc-form input[type=tel],.coc-form input[type=date],.coc-form select,.coc-form textarea{display:block;width:100%;margin-top:6px;padding:11px 12px;border:1px solid #b6c9dc;border-radius:8px;font:inherit;font-size:15px;font-weight:400;color:#19324d;background:#fff;box-sizing:border-box}
+.coc-form textarea{min-height:110px;resize:vertical}
+.coc-form input:focus,.coc-form select:focus,.coc-form textarea:focus{outline:2px solid #0b5fb8;outline-offset:1px;border-color:#0b5fb8}
+.coc-form [aria-invalid=true]{border-color:#d71920;background:#fff8f8}
+.coc-form .consent{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:14px;color:#465a70}
+.coc-form .consent input{margin-top:3px;width:18px;height:18px;flex:none}
+.coc-form .trap{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.coc-form button[type=submit]{background:#d71920;color:#fff;border:0;border-radius:8px;padding:13px 24px;font:inherit;font-size:15px;font-weight:700;cursor:pointer}
+.coc-form button[type=submit]:hover{background:#b3121a}
+.coc-form button[type=submit]:disabled{opacity:.6;cursor:wait}
+.coc-form .form-status{margin-top:14px;font-size:15px;font-weight:700;min-height:1.4em}
+.coc-form .form-status.ok{color:#18864b}
+.coc-form .form-status.error{color:#b3121a}
+.coc-form .form-status.busy{color:#62758a}
+.coc-form .note{font-size:13px;color:#62758a;margin:12px 0 0}
+@media(max-width:640px){.coc-form{padding:20px 16px}.coc-form .grid{grid-template-columns:1fr}.coc-form h2{font-size:24px}}

@@ -2,9 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "website",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["--yes", "http-server", "-p", "5173", "-c-1"],
+      "name": "coc-site",
+      "runtimeExecutable": "php",
+      "runtimeArgs": ["-S", "localhost:5173", "-t", "website"],
       "port": 5173
     }
   ]
