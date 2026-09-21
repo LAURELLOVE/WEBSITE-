@@ -155,6 +155,15 @@ PRIVACY
   test results or medical history; do not ask for medical details or payment card numbers
   through them. Delete handled submissions you no longer need.
 
+PHONES, TABLETS AND DESKTOPS
+  Every page adapts to Android/iPhone screens, tablets and desktops. websiteesponsive.css
+  and websiteesponsive.js are linked into each page: below 900px wide the long menu
+  becomes a single "Menu" button (tap to open/close), buttons and links are at least
+  44-48px tall for fingers, inputs do not trigger zoom on iPhones, and nothing scrolls
+  sideways. Tested on 33 pages at 360, 412, 768, 820, 1024, 1280 and 1920px wide.
+  New page? Add before </head>:  <link rel="stylesheet" href="responsive.css">
+  and before </body>:  <script src="responsive.js" defer></script>
+
 LOCAL PREVIEW / TESTING
   Static look only: open website\index.html.
   With working forms (needs PHP, e.g. XAMPP's):  php -S localhost:8080 -t website

@@ -4,8 +4,8 @@
     {
       "name": "coc-site",
       "runtimeExecutable": "php",
-      "runtimeArgs": ["-S", "localhost:5173", "-t", "website"],
-      "port": 5173
+      "runtimeArgs": ["-S", "localhost:5183", "-t", "website"],
+      "port": 5183
     }
   ]
 }
