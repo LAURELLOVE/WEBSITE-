@@ -34,6 +34,26 @@ IMPORTANT - ONE ACCOUNT, SEVERAL WEBSITES
   different website. Find the folder that belongs to the COC domain (see step 8) and put
   the site ONLY there. Never overwrite another site's files.
 
+YOUR ACCOUNT (checked 21 Sept 2026 in the Network Solutions control panel)
+  - One "Basic Hosting" package holds two domains: camoncenter.org and
+    camcancerfoundation.org. Server: PHP 7.4.10, MySQL 5.7.44, working sendmail.
+  - camoncenter.org currently points to the folder /wb_camoncenter.org/ (the old
+    WebsiteBuilder site, still live). That old site and its folder are NOT touched.
+  - The new site goes in the NEW folder  /camoncenter-site/  (already created, empty).
+    Do not use the older folders named camoncenter, site_camoncenter, newsite, final...
+  - Going live = Websites & Pointers > Pointers & Subdomains > camoncenter.org >
+    Subdirectory: change /wb_camoncenter.org/ to /camoncenter-site/ > Save. To go
+    back, set it to /wb_camoncenter.org/ again. Email for the domain is not affected.
+  - Existing databases include "camoncenter" and "camoncenter01": do not reuse them;
+    create a new one (for example camon_site with user camon_user).
+  - The database host is NOT "localhost": use the Hostname shown next to the new
+    database in MySQL Management (for this account it is of the form
+    <account>.ipagemysql.com).
+  - Unzipping on the server: File Manager > upload coc-website-upload.zip into
+    camoncenter-site, then HOSTING > Archive Gateway > Output Directory
+    camoncenter-site (never the top-level ROOT). Delete the zip from the server afterwards,
+    because it contains your database password.
+
 A. IN YOUR NETWORK SOLUTIONS ACCOUNT (in a browser)
   1. Log in at networksolutions.com > "Websites & Hosting" > click "Manage" on the
      hosting package for the COC domain.
